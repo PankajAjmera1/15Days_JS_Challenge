@@ -97,4 +97,4 @@
 // terniary operator
 //  condition ? true : false
 const icePriece =100
-icePriece <=80 ?console.log("less"):console.log("more");;
+icePriece <=80 ?console.log("less"):console.log("more");
