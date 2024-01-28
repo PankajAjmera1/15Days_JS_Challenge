@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Decoder Pankaj 2.0</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+
+</body>
+<script>
+//    setInterval(function(){
+//     console.log('decode');
+//    })
+
+const sayDate = function (str) {
+   
+    console.log(str,Date.now());
+    
+}
+let inervalID;
+
+
+document.querySelector('#start').addEventListener('click',function(){
+    inervalID=setInterval(sayDate,1000,"hiii")
+    setInterval(inervalID)
+        
+    })
+document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(inervalID)
+        
+        console.log('stopped');})
+
+
+    
+</script>
+</html>
